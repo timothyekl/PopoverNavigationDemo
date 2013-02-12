@@ -10,4 +10,6 @@
 
 @interface PNDNavigationViewController : NSViewController
 
+- (id)initWithPopover:(NSPopover *)popover;
+
 @end

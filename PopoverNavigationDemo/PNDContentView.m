@@ -7,6 +7,7 @@
 //
 
 #import "PNDContentView.h"
+#import "PNDNavigationView.h"
 
 #import "NSColor+PNDExtensions.h"
 
@@ -16,13 +17,15 @@
 
 @property (nonatomic, strong) NSButton *nextButton;
 
+- (PNDNavigationView *)navigationView;
+
 @end
 
 @implementation PNDContentView
 
 + (PNDContentView *)randomView;
 {
-    PNDContentView *view = [[PNDContentView alloc] initWithFrame:NSMakeRect(0, 0, 200, 100 + arc4random_uniform(300))];
+    PNDContentView *view = [[PNDContentView alloc] initWithFrame:NSMakeRect(0, 0, CONTENT_WIDTH, 100 + arc4random_uniform(300))];
     view.color = [NSColor randomColor];
     return view;
 }
@@ -39,6 +42,8 @@
         self.nextButton.translatesAutoresizingMaskIntoConstraints = NO;
         self.nextButton.title = @"Next";
         self.nextButton.bezelStyle = NSRoundedBezelStyle;
+        self.nextButton.target = self;
+        self.nextButton.action = @selector(next:);
         [self addSubview:self.nextButton];
         
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.nextButton attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f]];
@@ -59,6 +64,18 @@
     
     [self.color set];
     NSRectFill([self bounds]);
+}
+
+- (PNDNavigationView *)navigationView;
+{
+    assert([[self superview] isKindOfClass:[PNDNavigationView class]]);
+    return (PNDNavigationView *)[self superview];
+}
+
+- (void)next:(id)sender;
+{
+    assert(sender == self.nextButton);
+    [self.navigationView pushNewView];
 }
 
 @end

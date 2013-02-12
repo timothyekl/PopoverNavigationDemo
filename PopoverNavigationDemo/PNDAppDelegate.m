@@ -14,7 +14,8 @@
 - (IBAction)showPopover:(id)sender;
 {
     NSPopover *popover = [[NSPopover alloc] init];
-    popover.contentViewController = [[PNDNavigationViewController alloc] init];
+    popover.animates = YES;
+    popover.contentViewController = [[PNDNavigationViewController alloc] initWithPopover:popover];
     [popover showRelativeToRect:NSZeroRect ofView:sender preferredEdge:NSMaxYEdge];
 }
 

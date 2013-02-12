@@ -13,5 +13,8 @@
 @interface PNDNavigationView : NSView
 
 @property (nonatomic, strong) PNDContentView *currentView;
+@property (nonatomic, weak) NSPopover *popover;
+
+- (void)pushNewView;
 
 @end
