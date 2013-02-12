@@ -7,12 +7,15 @@
 //
 
 #import "PNDAppDelegate.h"
+#import "PNDNavigationViewController.h"
 
 @implementation PNDAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (IBAction)showPopover:(id)sender;
 {
-    // Insert code here to initialize your application
+    NSPopover *popover = [[NSPopover alloc] init];
+    popover.contentViewController = [[PNDNavigationViewController alloc] init];
+    [popover showRelativeToRect:NSZeroRect ofView:sender preferredEdge:NSMaxYEdge];
 }
 
 @end

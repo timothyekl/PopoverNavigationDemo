@@ -1,5 +1,5 @@
 //
-//  PNDAppDelegate.h
+//  PNDNavigationView.h
 //  PopoverNavigationDemo
 //
 //  Created by Tim Ekl on 2/12/13.
@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface PNDAppDelegate : NSObject <NSApplicationDelegate>
+@class PNDContentView;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface PNDNavigationView : NSView
 
-- (IBAction)showPopover:(id)sender;
+@property (nonatomic, strong) PNDContentView *currentView;
 
 @end

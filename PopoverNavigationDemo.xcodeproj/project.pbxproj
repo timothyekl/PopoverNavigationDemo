@@ -13,6 +13,10 @@
 		3E0EE52416CAC23600034A38 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EE52216CAC23600034A38 /* Credits.rtf */; };
 		3E0EE52716CAC23600034A38 /* PNDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EE52616CAC23600034A38 /* PNDAppDelegate.m */; };
 		3E0EE52A16CAC23600034A38 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EE52816CAC23600034A38 /* MainMenu.xib */; };
+		3E0EE53216CAC26E00034A38 /* PNDNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EE53116CAC26D00034A38 /* PNDNavigationViewController.m */; };
+		3E0EE53516CAC2D200034A38 /* PNDNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EE53416CAC2D200034A38 /* PNDNavigationView.m */; };
+		3E0EE53816CAC37D00034A38 /* PNDContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EE53716CAC37D00034A38 /* PNDContentView.m */; };
+		3E0EE53B16CAC58C00034A38 /* NSColor+PNDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EE53A16CAC58C00034A38 /* NSColor+PNDExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		3E0EE52516CAC23600034A38 /* PNDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNDAppDelegate.h; sourceTree = "<group>"; };
 		3E0EE52616CAC23600034A38 /* PNDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNDAppDelegate.m; sourceTree = "<group>"; };
 		3E0EE52916CAC23600034A38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3E0EE53016CAC26D00034A38 /* PNDNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDNavigationViewController.h; sourceTree = "<group>"; };
+		3E0EE53116CAC26D00034A38 /* PNDNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDNavigationViewController.m; sourceTree = "<group>"; };
+		3E0EE53316CAC2D200034A38 /* PNDNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDNavigationView.h; sourceTree = "<group>"; };
+		3E0EE53416CAC2D200034A38 /* PNDNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDNavigationView.m; sourceTree = "<group>"; };
+		3E0EE53616CAC37D00034A38 /* PNDContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNDContentView.h; sourceTree = "<group>"; };
+		3E0EE53716CAC37D00034A38 /* PNDContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNDContentView.m; sourceTree = "<group>"; };
+		3E0EE53916CAC58C00034A38 /* NSColor+PNDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+PNDExtensions.h"; sourceTree = "<group>"; };
+		3E0EE53A16CAC58C00034A38 /* NSColor+PNDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+PNDExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,14 @@
 				3E0EE52516CAC23600034A38 /* PNDAppDelegate.h */,
 				3E0EE52616CAC23600034A38 /* PNDAppDelegate.m */,
 				3E0EE52816CAC23600034A38 /* MainMenu.xib */,
+				3E0EE53016CAC26D00034A38 /* PNDNavigationViewController.h */,
+				3E0EE53116CAC26D00034A38 /* PNDNavigationViewController.m */,
+				3E0EE53316CAC2D200034A38 /* PNDNavigationView.h */,
+				3E0EE53416CAC2D200034A38 /* PNDNavigationView.m */,
+				3E0EE53616CAC37D00034A38 /* PNDContentView.h */,
+				3E0EE53716CAC37D00034A38 /* PNDContentView.m */,
+				3E0EE53916CAC58C00034A38 /* NSColor+PNDExtensions.h */,
+				3E0EE53A16CAC58C00034A38 /* NSColor+PNDExtensions.m */,
 				3E0EE51A16CAC23600034A38 /* Supporting Files */,
 			);
 			path = PopoverNavigationDemo;
@@ -169,6 +189,10 @@
 			files = (
 				3E0EE52016CAC23600034A38 /* main.m in Sources */,
 				3E0EE52716CAC23600034A38 /* PNDAppDelegate.m in Sources */,
+				3E0EE53216CAC26E00034A38 /* PNDNavigationViewController.m in Sources */,
+				3E0EE53516CAC2D200034A38 /* PNDNavigationView.m in Sources */,
+				3E0EE53816CAC37D00034A38 /* PNDContentView.m in Sources */,
+				3E0EE53B16CAC58C00034A38 /* NSColor+PNDExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
